@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psychological Doctor Appointment</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(to right, #dbeafe, #f0f9ff);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+
+    .container{
+      background:white;
+      width:100%;
+      max-width:500px;
+      padding:35px;
+      border-radius:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    h1{
+      text-align:center;
+      color:#2563eb;
+      margin-bottom:10px;
+    }
+
+    p{
+      text-align:center;
+      color:#555;
+      margin-bottom:25px;
+    }
+
+    .contact{
+      text-align:center;
+      margin-bottom:25px;
+      font-size:15px;
+      color:#333;
+    }
+
+    form{
+      display:flex;
+      flex-direction:column;
+    }
+
+    label{
+      margin-bottom:6px;
+      font-weight:bold;
+      color:#333;
+    }
+
+    input{
+      padding:12px;
+      margin-bottom:18px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      font-size:15px;
+      outline:none;
+      transition:0.3s;
+    }
+
+    input:focus{
+      border-color:#2563eb;
+      box-shadow:0 0 5px rgba(37,99,235,0.4);
+    }
+
+    button{
+      background:#2563eb;
+      color:white;
+      padding:14px;
+      border:none;
+      border-radius:8px;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#1d4ed8;
+    }
+
+    .footer{
+      text-align:center;
+      margin-top:20px;
+      font-size:14px;
+      color:#666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Psychological Care</h1>
+    <p>Book your appointment with our specialist doctor</p>
+
+    <div class="contact">
+      <strong>Contact Number:</strong> 7087771339
+    </div>
+
+    <form action="https://formsubmit.co/kapoorashima77@gmail.com" method="POST">
+
+      <!-- Disable Captcha -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Redirect after submit -->
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="Name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="Phone Number" placeholder="Enter your phone number" required>
+
+      <label for="date">Appointment Date</label>
+      <input type="date" id="date" name="Appointment Date" required>
+
+      <button type="submit">Book Appointment</button>
+
+    </form>
+
+    <div class="footer">
+      Your mental health matters ❤️
+    </div>
+  </div>
+
+</body>
+</html>
